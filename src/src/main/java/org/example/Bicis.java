@@ -22,12 +22,18 @@ public class Bicis {
     private String modelo;
     private LocalDate fechaCompra;
 
+    private double tarifaAlquiler;
+
     //Constructor
-    public Bicis(String marca, String modelo, LocalDate fechaCompra) {
+    public Bicis(String marca, String modelo, LocalDate fechaCompra, double tarifaAlquiler) {
         this.marca = marca;
         this.modelo = modelo;
         this.fechaCompra = fechaCompra;
+        this.tarifaAlquiler = tarifaAlquiler;
+
     }
+
+
 
     //Getters y Setters
 
@@ -55,11 +61,23 @@ public class Bicis {
         this.fechaCompra = fechaCompra;
     }
 
+    public double getTarifaAlquiler() {
+        return tarifaAlquiler;
+    }
+
+    public void setTarifaAlquiler(double tarifaAlquiler) {
+        this.tarifaAlquiler = tarifaAlquiler;
+    }
+
     //Métodos
 
     @Override
 
     public String toString() {
-        return "Bicis{" + "marca=" + marca + ", modelo=" + modelo + ", fechaCompra=" + fechaCompra + '}';
+        return "Bicis{" + "marca=" + marca + ", modelo=" + modelo + ", fechaCompra=" + fechaCompra + ", tarifaAlquiler=" + tarifaAlquiler + '}';
+    }
+
+    public String tarifaAlquiler() {
+        return "La tarifa de alquiler es de " + tarifaAlquiler + "€";
     }
 }
