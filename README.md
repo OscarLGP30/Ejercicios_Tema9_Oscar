@@ -1,6 +1,6 @@
 # Ejercicios_Tema9_Oscar
 
-Mi repositorio:
+Mi repositorio: https://github.com/OscarLGP30/Ejercicios_Tema9_Oscar.git
 
 1. El alquiler de bicis
 El objetivo es crear un programa que permita a una empresa de alquiler de bicicletas, mostrar los modelos que se ofrecen en alquiler y los precios.
